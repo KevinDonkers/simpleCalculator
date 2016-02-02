@@ -66,6 +66,9 @@
                                 <state key="normal" title="+">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="AddClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kdu-yp-i4G"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B22-fs-yeq">
                                 <rect key="frame" x="61" y="225" width="100" height="70"/>
@@ -115,6 +118,9 @@
                                 <state key="normal" title="-">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="subtractClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zBp-lw-egU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2a-YI-1Kf">
                                 <rect key="frame" x="61" y="303" width="100" height="70"/>
@@ -164,6 +170,9 @@
                                 <state key="normal" title="X">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="multplyClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nDq-ev-kUk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqJ-15-Obc">
                                 <rect key="frame" x="61" y="381" width="100" height="70"/>
@@ -188,6 +197,9 @@
                                 <state key="normal" title=".">
                                     <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="decimalClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NC8-Eg-Uzp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjW-MP-vRl">
                                 <rect key="frame" x="451" y="381" width="100" height="70"/>
@@ -198,7 +210,35 @@
                                 <state key="normal" title="/">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="divideClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f33-jM-A8n"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="490" translatesAutoresizingMaskIntoConstraints="NO" id="c9H-nF-hvb">
+                                <rect key="frame" x="61" y="20" width="490" height="114"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="1">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="80" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="rightToLeft" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.padding">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0l7-Vu-4I1">
                                 <rect key="frame" x="351" y="20" width="100" height="20"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -208,6 +248,9 @@
                                 <state key="normal" title="=">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="equalsClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z5H-KS-mfi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4y-J0-qP9">
                                 <rect key="frame" x="109" y="20" width="100" height="20"/>
@@ -219,13 +262,13 @@
                                     <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="threeClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qpm-Nm-XGC"/>
+                                    <action selector="clearClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ax0-vZ-fp9"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="490" translatesAutoresizingMaskIntoConstraints="NO" id="c9H-nF-hvb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="490" translatesAutoresizingMaskIntoConstraints="NO" id="r3z-f9-uXX">
                                 <rect key="frame" x="61" y="20" width="490" height="114"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="1">
+                                    <fragment content=" ">
                                         <attributes>
                                             <color key="NSBackgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                             <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -265,6 +308,7 @@
                             <constraint firstItem="QIq-uZ-4UQ" firstAttribute="width" secondItem="ian-vH-IwC" secondAttribute="width" id="9Vi-E1-99V"/>
                             <constraint firstItem="z6E-55-rfy" firstAttribute="leading" secondItem="u0l-RJ-HmZ" secondAttribute="trailing" constant="20" id="9eY-se-aul"/>
                             <constraint firstItem="JjW-MP-vRl" firstAttribute="height" secondItem="ian-vH-IwC" secondAttribute="height" id="9wn-lh-wG6"/>
+                            <constraint firstAttribute="trailing" secondItem="r3z-f9-uXX" secondAttribute="trailing" constant="20" id="F8n-94-8KR"/>
                             <constraint firstItem="kVs-DH-VAt" firstAttribute="height" secondItem="ian-vH-IwC" secondAttribute="height" id="Ffj-Bm-YCD"/>
                             <constraint firstItem="c9H-nF-hvb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="G3b-Yy-7Yl"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pWJ-m7-y2P" secondAttribute="bottom" constant="20" id="Go9-Pg-njn"/>
@@ -292,6 +336,7 @@
                             <constraint firstItem="6oh-Xm-8u8" firstAttribute="top" secondItem="Hvk-9n-zvM" secondAttribute="bottom" constant="20" id="ZAI-He-4zj"/>
                             <constraint firstItem="8F8-gc-u3w" firstAttribute="width" secondItem="ian-vH-IwC" secondAttribute="width" id="Zdg-yp-b3R"/>
                             <constraint firstItem="JjW-MP-vRl" firstAttribute="top" secondItem="QIq-uZ-4UQ" secondAttribute="bottom" constant="20" id="aKP-mC-a9w"/>
+                            <constraint firstItem="r3z-f9-uXX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="bD3-8x-goe"/>
                             <constraint firstItem="Hvk-9n-zvM" firstAttribute="top" secondItem="8F8-gc-u3w" secondAttribute="bottom" constant="20" id="bfj-xz-3B7"/>
                             <constraint firstItem="Hvk-9n-zvM" firstAttribute="width" secondItem="ian-vH-IwC" secondAttribute="width" id="cBs-xN-1Hr"/>
                             <constraint firstItem="c9H-nF-hvb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="cCC-KT-wJQ"/>
@@ -321,6 +366,7 @@
                             <constraint firstItem="pWJ-m7-y2P" firstAttribute="leading" secondItem="z6E-55-rfy" secondAttribute="trailing" constant="20" id="uCr-ga-pDN"/>
                             <constraint firstItem="z6E-55-rfy" firstAttribute="top" secondItem="kVs-DH-VAt" secondAttribute="bottom" constant="20" id="uTT-Ta-TAd"/>
                             <constraint firstItem="B22-fs-yeq" firstAttribute="height" secondItem="ian-vH-IwC" secondAttribute="height" id="uqH-4H-aZr"/>
+                            <constraint firstItem="mg8-IU-9oL" firstAttribute="top" secondItem="r3z-f9-uXX" secondAttribute="bottom" constant="30" id="vJG-bp-2Dg"/>
                             <constraint firstItem="Hvk-9n-zvM" firstAttribute="height" secondItem="ian-vH-IwC" secondAttribute="height" id="vOC-o5-Hbq"/>
                             <constraint firstItem="0l7-Vu-4I1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="vT7-ds-CZw"/>
                             <constraint firstItem="L2a-YI-1Kf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="voi-fv-tf1"/>
